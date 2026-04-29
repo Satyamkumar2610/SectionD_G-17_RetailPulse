@@ -1,0 +1,23 @@
+category,fluid,test_count,abnormal_count,mean_value,median_value,abnormal_rate
+BLOOD GAS,BLOOD,1222,0,-1.0,-1.0,0.0
+Blood Gas,Blood,10726,3407,49.342756852507925,21.0,0.3176
+Blood Gas,Other Body Fluid,2,0,7.48,7.48,0.0
+CHEMISTRY,BLOOD,2,1,191.5,191.5,0.5
+CHEMISTRY,URINE,37,0,-1.0,-1.0,0.0
+Chemistry,Ascites,47,0,54.56170212765958,2.6,0.0
+Chemistry,Blood,29685,10951,84.68882408623884,14.0,0.3689
+Chemistry,Cerebrospinal Fluid (CSF),26,10,151.26923076923077,57.0,0.3846
+Chemistry,Other Body Fluid,17,0,113.41764705882352,6.6,0.0
+Chemistry,Pleural,36,0,594.1222222222221,67.0,0.0
+Chemistry,Urine,702,8,107.50555555555555,11.0,0.0114
+HEMATOLOGY,BLOOD,1,0,5.0,5.0,0.0
+HEMATOLOGY,OTHER BODY FLUID,1,0,-1.0,-1.0,0.0
+Hematology,Ascites,129,120,776.062015503876,21.0,0.9302
+Hematology,Blood,28361,14871,55.189343464616904,17.1,0.5243
+Hematology,Bone Marrow,44,0,-1.0,-1.0,0.0
+Hematology,Cerebrospinal Fluid (CSF),66,7,1341.8939393939395,12.0,0.1061
+Hematology,Joint Fluid,12,5,939.2083333333334,24.0,0.4167
+Hematology,Other Body Fluid,94,41,572.4734042553191,1.0,0.4362
+Hematology,Pleural,73,69,2083.4657534246576,27.0,0.9452
+Hematology,Stool,1,0,-1.0,-1.0,0.0
+Hematology,Urine,4790,247,4.02962369519833,-1.0,0.0516
