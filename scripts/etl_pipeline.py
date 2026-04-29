@@ -141,6 +141,16 @@ def stage_cleaning(dfs: dict, processed_dir: str) -> pd.DataFrame:
         how="left",
     )
 
+    # ── Drop rows where 'value' is entirely missing ──────────────────────────
+    # These 5 rows (out of 76,074) have no lab value recorded in the MIMIC
+    # source itself. The original 02_cleaning.ipynb dropped them, making the
+    # canonical dataset 76,069 rows — matching what Tableau was built on.
+    # Keeping them with a -1 sentinel would skew min() / histogram statistics.
+    before = len(lab_master)
+    lab_master = lab_master.dropna(subset=["value"])
+    dropped = before - len(lab_master)
+    print(f"  Dropped {dropped} row(s) with null 'value' (no MIMIC source data)")
+
     # ── Impute valuenum from text value ──────────────────────────────────────
     for text_val, num_val in VALUE_TO_NUM.items():
         mask = lab_master["valuenum"].isna() & (
